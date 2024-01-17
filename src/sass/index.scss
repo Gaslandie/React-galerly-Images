@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(186, 177, 166);
+    padding: 0;
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        .photo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            height: auto;
+            background-color: aliceblue;
+            img{
+                width: 200px;
+                height: 200px;
+                transition: transform 0.5s;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
+            .name,.job,.age{
+                text-transform: uppercase;
+                margin-block: 10px;
+            }
+            .job,.age{
+                text-transform: lowercase;
+            }
+        }
+
+    }
+
+}
+

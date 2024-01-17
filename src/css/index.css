@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(186, 177, 166);
+  padding: 0;
+}
+body .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+body .gallery .photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  background-color: aliceblue;
+}
+body .gallery .photo img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s;
+}
+body .gallery .photo img:hover {
+  transform: rotate(360deg);
+}
+body .gallery .photo .name, body .gallery .photo .job, body .gallery .photo .age {
+  text-transform: uppercase;
+  margin-block: 10px;
+}
+body .gallery .photo .job, body .gallery .photo .age {
+  text-transform: lowercase;
+}
+
+/*# sourceMappingURL=index.css.map */
